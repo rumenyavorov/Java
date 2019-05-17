@@ -1,4 +1,4 @@
-package OOP.OOPBasics.Encapsulation.Pres;
+package OOP.OOPBasics.Encapsulation.Lab;
 
 import java.util.Collections;
 
