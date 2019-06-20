@@ -3,13 +3,17 @@ package OOP.OOPBasics.Polimorphism.Exercise.VehiclesExtension;
 public class Car extends Vehicle {
     private static final double AIR_CONSUMPTION = 0.9;
 
-    public Car(double fuelQuantity, double fuelConsumption) {
-        super(fuelQuantity, fuelConsumption + AIR_CONSUMPTION);
+    public Car(double fuelQuantity, double fuelConsumption, double tankCapacity) {
+        super(fuelQuantity, fuelConsumption + AIR_CONSUMPTION, tankCapacity);
     }
 
     @Override
     public void refuel(double fuel) {
-        super.setFuelQuantity(super.getFuelQuantity() + fuel);
+        if(fuel > getTankCapacity()){
+            throw new IllegalArgumentException("Cannot fit fuel in tank");
+        } else if(fuel < getTankCapacity()) {
+            super.setFuelQuantity(super.getFuelQuantity() + fuel);
+        }
     }
 
     @Override

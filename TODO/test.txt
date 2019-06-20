@@ -1,0 +1,6 @@
+tomato - домат
+carrot - морков
+potato - картоф
+world - свят
+cat - котка
+jelly - желе
