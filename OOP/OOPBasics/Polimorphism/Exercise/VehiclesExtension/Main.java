@@ -1,4 +1,4 @@
-package OOP.OOPBasics.Polimorphism.Exercise.Vehicles;
+package OOP.OOPBasics.Polimorphism.Exercise.VehiclesExtension;
 
 import java.text.DecimalFormat;
 import java.text.NumberFormat;

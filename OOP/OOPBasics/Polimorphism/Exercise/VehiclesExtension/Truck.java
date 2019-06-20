@@ -1,6 +1,6 @@
-package OOP.OOPBasics.Polimorphism.Exercise.Vehicles;
+package OOP.OOPBasics.Polimorphism.Exercise.VehiclesExtension;
 
-public class Truck extends Vehicle{
+public class Truck extends Vehicle {
     private static final double AIR_CONSUMPTION = 1.6;
     private static final double REFUEL_EFFICIENCY = 0.95;
 
@@ -22,3 +22,4 @@ public class Truck extends Vehicle{
         super.setFuelQuantity(super.getFuelQuantity() - fuelNeeded);
     }
 }
+
