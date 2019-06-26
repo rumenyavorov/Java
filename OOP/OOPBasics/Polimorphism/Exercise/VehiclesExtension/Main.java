@@ -21,13 +21,13 @@ public class Main {
 
         NumberFormat decFor = new DecimalFormat("0.##");
 
-
+        System.out.println();
         int n = Integer.parseInt(sc.nextLine());
         for (int i = 0; i < n; i++) {
             try {
                 String[] tokens = sc.nextLine().split("\\s+");
                 if(Double.parseDouble(tokens[2]) < 1){
-                    throw new IllegalArgumentException("Fuel must be positive number");
+                    throw new IllegalArgumentException("Fuel must be a positive number");
                 }
 
                 if (tokens[0].equals("Drive")) {
